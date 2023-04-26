@@ -130,3 +130,11 @@ function calculateWinner(squares) {
   }
   return null; // [7]
 }
+
+// [1] The currentMove state variable keeps track of which move we’re currently viewing.
+// [2] If the square is already filled or if there’s a winner, we don’t want to do anything when the square is clicked.
+// [3] The onPlay prop is a function that we call when a square is clicked. We pass it the nextSquares array, which is the squares array with the new move added.
+// [4] The lines array contains all the possible winning combinations.
+// [5] If the first square in the line is empty, we can skip the rest of the line.
+// [6] If the first square in the line is filled and all three squares in the line are the same, we have a winner.
+// [7] If none of the lines have a winner, we return null.
